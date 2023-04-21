@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>Digital Javelin Calc</title>
+  <style type="text/css">
+    .flex-row {
+      display: flex;
+    }
+
+    .flex-col-6 {
+      display: block;
+      width: 50%;
+      min-height: 32px;
+    }
+    .flex-col-8 {
+      display: block;
+      width: 66%;
+    }
+    .flex-col-4 {
+      display: block;
+      width: 33%;
+    }
+    .flex-justify-center {
+      justify-content: center;
+    }
+    .flex-justify-space-evenly {
+      justify-content: space-evenly;
+    }
+    .flex-space-between {
+      justify-content: space-between;
+    }
+    .line-height-36 {
+      line-height:36px;
+    }
+    .vertical-rhythm {
+      margin-bottom: 1em;
+    }
+    input[type=tel], input[type=text] {
+      height: 32px;
+    }
+    .center {
+      text-align: center;
+    }
+    .button-lg {
+      padding: 1em 2em;
+      border: 2px solid black;
+      color: black;
+    }
+    #calculate {
+      background-color: lawngreen;
+    }
+    #clear {
+      background-color: orangered;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="center">Digital Javelin Calculator</h1>
+  <div>
+    <!-- COG -->
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div class="">
+        Center of Gravity
+      </div>
+      <div class="">
+        <input type="tel" name="" id="cog"> (mm)
+      </div>
+    </div>
+
+    <!-- Overall Length -->
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div class="">
+        Overall Length
+      </div>
+      <div class="">
+        <input type="tel" name="" id="length">&nbsp;(mm)
+      </div>
+    </div>
+
+    <!-- Diameter -->
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div class="">
+        Diameter
+      </div>
+      <div class="">
+        <input type="tel" name="" id="jav-diameter"> (mm)
+      </div>
+    </div>
+
+    <!-- Buttons  -->
+    <div class="flex-row flex-justify-space-evenly vertical-rhythm line-height-36">
+      <button id="calculate" class="button-lg">Calculate</button>
+      <button id="clear" class="button-lg">Clear</button>
+    </div>
+
+    <!-- Outputs -->
+
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div>
+        Tip to Center of Gravity 
+        <!-- (COG/2) -->
+      </div>
+      <div>
+        <input disabled type="text" id="tip-cog-midpoint"> (mm)
+      </div>
+    </div>
+
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div>
+        Center of Gravity to Tail
+        <!-- ((COG-MID)/2 + COG) -->
+      </div>
+      <div>
+        <input disabled type="text" id="cog-tail-midpoint"> (mm)
+      </div>
+    </div>
+
+    <div class="flex-row vertical-rhythm line-height-36 flex-space-between">
+      <div>
+        90% Diameter
+      </div>
+      <div>
+        <input disabled type="text" id="90-percent-dia"> (mm)
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="./app.js"></script> 
+</body>
+</html>
