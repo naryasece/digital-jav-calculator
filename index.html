@@ -40,6 +40,10 @@
     input[type=tel], input[type=text] {
       height: 32px;
     }
+    input[disabled] {
+      color: black;
+      font-size: 16px;
+    }
     .center {
       text-align: center;
     }
@@ -65,7 +69,7 @@
         Center of Gravity
       </div>
       <div class="">
-        <input type="tel" name="" id="cog"> (mm)
+        <input type="tel" name="" id="cog" size="6"> (mm)
       </div>
     </div>
 
@@ -75,7 +79,7 @@
         Overall Length
       </div>
       <div class="">
-        <input type="tel" name="" id="length">&nbsp;(mm)
+        <input type="tel" name="" id="length" size="6">&nbsp;(mm)
       </div>
     </div>
 
@@ -85,7 +89,7 @@
         Diameter
       </div>
       <div class="">
-        <input type="tel" name="" id="jav-diameter"> (mm)
+        <input type="tel" name="" id="jav-diameter" size="6"> (mm)
       </div>
     </div>
 
@@ -103,7 +107,7 @@
         <!-- (COG/2) -->
       </div>
       <div>
-        <input disabled type="text" id="tip-cog-midpoint"> (mm)
+        <input disabled type="text" id="tip-cog-midpoint" size="6"> (mm)
       </div>
     </div>
 
@@ -113,7 +117,7 @@
         <!-- ((COG-MID)/2 + COG) -->
       </div>
       <div>
-        <input disabled type="text" id="cog-tail-midpoint"> (mm)
+        <input disabled type="text" id="cog-tail-midpoint" size="6"> (mm)
       </div>
     </div>
 
@@ -122,7 +126,7 @@
         90% Diameter
       </div>
       <div>
-        <input disabled type="text" id="90-percent-dia"> (mm)
+        <input disabled type="text" id="90-percent-dia" size="6"> (mm)
       </div>
     </div>
 
