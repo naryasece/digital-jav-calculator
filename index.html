@@ -39,8 +39,9 @@
     }
     input[type=tel], input[type=text] {
       height: 32px;
+      font-size: 16px;
     }
-    input[disabled] {
+    input[disabled], input[readonly] {
       color: black;
       font-size: 16px;
     }
@@ -107,7 +108,7 @@
         <!-- (COG/2) -->
       </div>
       <div>
-        <input disabled type="text" id="tip-cog-midpoint" size="6"> (mm)
+        <input readonly type="text" id="tip-cog-midpoint" size="6"> (mm)
       </div>
     </div>
 
@@ -117,7 +118,7 @@
         <!-- ((COG-MID)/2 + COG) -->
       </div>
       <div>
-        <input disabled type="text" id="cog-tail-midpoint" size="6"> (mm)
+        <input readonly type="text" id="cog-tail-midpoint" size="6"> (mm)
       </div>
     </div>
 
@@ -126,7 +127,7 @@
         90% Diameter
       </div>
       <div>
-        <input disabled type="text" id="90-percent-dia" size="6"> (mm)
+        <input readonly type="text" id="90-percent-dia" size="6"> (mm)
       </div>
     </div>
 
