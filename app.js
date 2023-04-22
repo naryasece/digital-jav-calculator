@@ -65,6 +65,11 @@ const determineMidPoints = () => {
 
 
 const clearValues = () => {
+	if (document.getElementById("cog").value === '' && document.getElementById("length").value === '') {
+		document.getElementById("jav-diameter").value = '';
+		document.getElementById("90-percent-dia").value = '';
+		return;
+	}
 	document.getElementById("cog").value = '';
 	document.getElementById("length").value = '';
 	document.getElementById("tip-cog-midpoint").value = '';
